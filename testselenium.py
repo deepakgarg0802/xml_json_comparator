@@ -18,10 +18,14 @@ class UntitledTestCase(unittest.TestCase):
 
     def test_untitled_test_case(self):
         driver = self.driver
-        driver.get("https://codebeautify.org/xmltojson")
-        driver.find_element_by_xpath("//div[@id='editor']/div[2]/div").click()
-        driver.find_element_by_xpath("//input[@value='XML to JSON']").click()
-        print("hello")
+        driver.get("http://www.utilities-online.info/xmltojson/#.Wrjqii5ua70")
+        driver.find_element_by_id("xml").click()
+        driver.find_element_by_id("xml").clear()
+        driver.find_element_by_id("xml").send_keys("<control>X5</control>")
+        driver.find_element_by_id("tojson").click()
+        json_output= driver.find_element_by_id("json").get_attribute("value")
+
+        print(json_output)
 
     def is_element_present(self, how, what):
         try:
