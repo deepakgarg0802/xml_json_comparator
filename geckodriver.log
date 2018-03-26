@@ -1,0 +1,21 @@
+1522058313611	geckodriver	INFO	geckodriver 0.20.0 (0ac3698a74a7b1a742682b8e704f1f418df827ed 2018-03-13)
+1522058313646	geckodriver	INFO	Listening on 127.0.0.1:52616
+1522058356486	geckodriver	INFO	geckodriver 0.20.0 (0ac3698a74a7b1a742682b8e704f1f418df827ed 2018-03-13)
+1522058356522	geckodriver	INFO	Listening on 127.0.0.1:52766
+1522059267190	geckodriver	INFO	geckodriver 0.20.0
+1522059267244	geckodriver	INFO	Listening on 127.0.0.1:54827
+1522059270342	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\DEEPAK~1.GAR\\AppData\\Local\\Temp\\rust_mozprofile.sl5LZoZbodM7"
+1522059274252	Marionette	INFO	Enabled via --marionette
+1522059279802	Marionette	INFO	Listening on port 54842
+1522059279822	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\deepak.garg2\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://codebeautify.org/js/common_load.js, line 508: unreachable code after return statement
+JavaScript warning: https://codebeautify.org/js/common_load.js, line 676: unreachable code after return statement
+JavaScript warning: https://codebeautify.org/js/common_load.js, line 1690: unreachable code after return statement
+[Child 11092, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Unable to read VR Path Registry from C:\Users\deepak.garg2\AppData\Local\openvr\openvrpaths.vrpath
+1522059292164	geckodriver::marionette	ERROR	Failed to stop browser process
