@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
-
+import jsoncompare
 
 class UntitledTestCase(unittest.TestCase):
     def setUp(self):
@@ -25,14 +25,15 @@ class UntitledTestCase(unittest.TestCase):
         driver.find_element_by_id("tojson").click()
         json_output= driver.find_element_by_id("json").get_attribute("value")
 
-        driver.get("http://json-diff.com/")
-        driver.find_element_by_xpath("//div[@id='left-input']/div/div[6]/div/div/div/div/div[5]/div/pre").click()
-        driver.find_element_by_xpath("//div[@id='left-input']/div/div/textarea").clear()
-        driver.find_element_by_xpath("//div[@id='left-input']/div/div/textarea").send_keys(json_output)
 
-        driver.find_element_by_xpath("//div[@id='right-input']/div/div[6]/div/div/div/div/div[5]/div/pre").click()
-        driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").clear()
-        driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").send_keys("{}")
+        #driver.get("http://json-diff.com/")
+        # driver.find_element_by_xpath("//div[@id='left-input']/div/div[6]/div/div/div/div/div[5]/div/pre").click()
+        # driver.find_element_by_xpath("//div[@id='left-input']/div/div/textarea").clear()
+        # driver.find_element_by_xpath("//div[@id='left-input']/div/div/textarea").send_keys(json_output)
+        #
+        # driver.find_element_by_xpath("//div[@id='right-input']/div/div[6]/div/div/div/div/div[5]/div/pre").click()
+        # driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").clear()
+        # driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").send_keys("{}")
 
         print(json_output)
 

@@ -92,8 +92,8 @@ def getContent(location):
         content = getContentFromUri(location)
     else:
         content = getContentFromFile(location)
-    #if content is None:
-    #raise Error("Could not load content for " + location)
+    if content is None:
+        raise print("Could not load content for " + location)
     return json.loads(content)
 
 def compare(location1, location2):
@@ -111,14 +111,47 @@ def compare(location1, location2):
         diffs.append({'type': 'ADDED', 'message': message})
     return diffs
 
+def compareText(location1, location2):
+    json1 = (location1)
+    json2 = (location2)
+    diff1 = Diff(json1, json2, True).difference
+    diff2 = Diff(json2, json1, False).difference
+    diffs = []
+    for type, message in diff1:
+        newType = 'CHANGED'
+        if type == PATH:
+            newType = 'REMOVED'
+        diffs.append({'type': newType, 'message': message})
+    for type, message in diff2:
+        diffs.append({'type': 'ADDED', 'message': message})
+    return diffs
 
-if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        sys.exit('Error')
-    location1 = sys.argv[1]
-    location2 = sys.argv[2]
-    diffs = compare(location1, location2)
+def myf(location1, location2):
+    # if len(sys.argv) != 3:
+    #     sys.exit('Error')
+    # location1 = sys.argv[1]
+    # location2 = sys.argv[2]
+    # location1= """{}"""
+    # location2 = """{"a":"b"}"""
+    diffs = compareText(location1, location2)
     if len(diffs) > 0:
         print('\r\nFound differences comparing ' + location1 + ' and ' + location2)
-    for diff in diffs:
-        print(diff['type'] + ': ' + diff['message'])
+        for diff in diffs:
+            print(diff['type'] + ': ' + diff['message'])
+    else:
+        print("no diff")
+
+if __name__ == '__main__':
+    # if len(sys.argv) != 3:
+    #     sys.exit('Error')
+    # location1 = sys.argv[1]
+    # location2 = sys.argv[2]
+    location1= """{}"""
+    location2 = """{"a":"b"}"""
+    diffs = compareText(location1, location2)
+    if len(diffs) > 0:
+        print('\r\nFound differences comparing ' + location1 + ' and ' + location2)
+        for diff in diffs:
+            print(diff['type'] + ': ' + diff['message'])
+    else:
+        print("no diff")

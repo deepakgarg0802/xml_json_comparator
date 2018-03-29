@@ -1,0 +1,28 @@
+{
+      "data" : {
+        "grid" : "1",
+        "xminarrow" : "1",
+        "xmaxarrow" : "1",
+        "yminarrow" : "1",
+        "ymaxarrow" : "1",
+        "hidexaxis" : "",
+        "labels" : [ ],
+        "x-axis" : {
+          "min" : "-10.900000",
+          "tickspacing" : "1",
+          "max" : "10.900000",
+          "format" : "#",
+          "label" : "x"
+        },
+        "y-axis" : {
+          "min" : "-10.900000",
+          "tickspacing" : "1",
+          "max" : "10.900000",
+          "format" : "#",
+          "label" : "y",
+          "labelspacingenlarged" : "2"
+        }
+      },
+      "model" : "glp-xygraph",
+      "type" : "graph"
+    }
