@@ -111,9 +111,9 @@ def compare(location1, location2):
         diffs.append({'type': 'ADDED', 'message': message})
     return diffs
 
-def compareText(location1, location2):
-    json1 = (location1)
-    json2 = (location2)
+def compareText(json_text, json_file):
+    json1 = (json_text)
+    json2 = getContent(json_file)
     diff1 = Diff(json1, json2, True).difference
     diff2 = Diff(json2, json1, False).difference
     diffs = []
@@ -126,16 +126,16 @@ def compareText(location1, location2):
         diffs.append({'type': 'ADDED', 'message': message})
     return diffs
 
-def myf(location1, location2):
+def myf(text, location):
     # if len(sys.argv) != 3:
     #     sys.exit('Error')
     # location1 = sys.argv[1]
     # location2 = sys.argv[2]
     # location1= """{}"""
     # location2 = """{"a":"b"}"""
-    diffs = compareText(location1, location2)
+    diffs = compareText(text, location)
     if len(diffs) > 0:
-        print('\r\nFound differences comparing ' + location1 + ' and ' + location2)
+        print('\r\nFound differences comparing ' + 'text' + ' and ' + location)
         for diff in diffs:
             print(diff['type'] + ': ' + diff['message'])
     else:

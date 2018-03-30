@@ -25,7 +25,7 @@ class UntitledTestCase(unittest.TestCase):
         xml_content= open("./scratch_xml.xml").read();
         driver.find_element_by_id("xml").send_keys(xml_content)
         driver.find_element_by_id("tojson").click()
-        json_output= driver.find_element_by_id("json").get_attribute("value")
+        json_output_from_net= driver.find_element_by_id("json").get_attribute("value")
 
 
         #driver.get("http://json-diff.com/")
@@ -37,7 +37,9 @@ class UntitledTestCase(unittest.TestCase):
         # driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").clear()
         # driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").send_keys("{}")
 
-        print(json_output)
+        jsoncompare.myf(json_output_from_net,"./scratch.json")
+
+        print("############ Finished #############")
 
     def is_element_present(self, how, what):
         try:
