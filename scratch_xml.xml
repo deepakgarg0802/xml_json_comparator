@@ -1,0 +1,4 @@
+<xygraph name="X1" alttext="A coordinate system has a horizontal x-axis labeled from negative 11 to 11 in increments of 1 and a vertical y-axis labeled from negative 11 to 11 in increments of 1." grid="1" titlepos="top" title="" anisotropic="1" squaregraph="1" xminarrow="1" xmaxarrow="1" yminarrow="1" ymaxarrow="1">
+      <xaxis title="x" min="-10.900000" max="10.900000" tickspacing="1" format="#."/>
+      <yaxis labelspacingenlarged="2" title="y" min="-10.900000" max="10.900000" tickspacing="1" format="#."/>
+    </xygraph>

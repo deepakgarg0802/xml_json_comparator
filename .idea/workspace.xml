@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d4fdf3-8453-48fe-9653-ead118cc0b1f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/scratch.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scratch2.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2-0.11.1-py3.6.egg-info/PKG-INFO" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2-0.11.1-py3.6.egg-info/SOURCES.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2-0.11.1-py3.6.egg-info/dependency_links.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2-0.11.1-py3.6.egg-info/installed-files.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2-0.11.1-py3.6.egg-info/top_level.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2/cacerts.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2/iri2uri.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/httplib2/socks.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="$PROJECT_DIR$/geckodriver.log" />
-      <change beforePath="$PROJECT_DIR$/jsoncompare.py" afterPath="$PROJECT_DIR$/jsoncompare.py" />
       <change beforePath="$PROJECT_DIR$/testselenium.py" afterPath="$PROJECT_DIR$/testselenium.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +16,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/xml_json_comparator$start.coverage" NAME="start Coverage Results" MODIFIED="1522052626531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/xml_json_comparator$jsoncompare.coverage" NAME="jsoncompare Coverage Results" MODIFIED="1522307011140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/xml_json_comparator$testselenium.coverage" NAME="testselenium Coverage Results" MODIFIED="1522305465380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/xml_json_comparator$testselenium.coverage" NAME="testselenium Coverage Results" MODIFIED="1522314723428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -47,11 +35,21 @@
       <file leaf-file-name="testselenium.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testselenium.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="425">
+              <caret line="31" column="73" lean-forward="false" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch_xml.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scratch_xml.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,6 +107,7 @@
         <option value="$PROJECT_DIR$/scratch2.json" />
         <option value="$PROJECT_DIR$/jsoncompare.py" />
         <option value="$PROJECT_DIR$/testselenium.py" />
+        <option value="$PROJECT_DIR$/scratch_xml.xml" />
       </list>
     </option>
   </component>
@@ -183,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.jsoncompare">
+  <component name="RunManager" selected="Python.testselenium">
     <configuration name="jsoncompare" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -248,8 +247,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.jsoncompare" />
-        <item index="1" class="java.lang.String" itemvalue="Python.testselenium" />
+        <item index="0" class="java.lang.String" itemvalue="Python.testselenium" />
+        <item index="1" class="java.lang.String" itemvalue="Python.jsoncompare" />
         <item index="2" class="java.lang.String" itemvalue="Python.start" />
       </list>
     </recent_temporary>
@@ -282,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522134454731</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="json comparison code added insted of api">
+      <created>1522308980985</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522308980985</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -417,10 +423,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scratch_xml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testselenium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="425">
+          <caret line="31" column="73" lean-forward="false" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
           </folding>

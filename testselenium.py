@@ -21,7 +21,9 @@ class UntitledTestCase(unittest.TestCase):
         driver.get("http://www.utilities-online.info/xmltojson/#.Wrjqii5ua70")
         driver.find_element_by_id("xml").click()
         driver.find_element_by_id("xml").clear()
-        driver.find_element_by_id("xml").send_keys("<control>X5</control>")
+
+        xml_content= open("./scratch_xml.xml").read();
+        driver.find_element_by_id("xml").send_keys(xml_content)
         driver.find_element_by_id("tojson").click()
         json_output= driver.find_element_by_id("json").get_attribute("value")
 
