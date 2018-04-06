@@ -112,7 +112,7 @@ def compare(location1, location2):
     return diffs
 
 def compareText(json_text, json_file):
-    json1 = (json_text)
+    json1 = json.loads(json_text)
     json2 = getContent(json_file)
     diff1 = Diff(json1, json2, True).difference
     diff2 = Diff(json2, json1, False).difference
@@ -146,8 +146,8 @@ if __name__ == '__main__':
     #     sys.exit('Error')
     # location1 = sys.argv[1]
     # location2 = sys.argv[2]
-    location1= """{}"""
-    location2 = """{"a":"b"}"""
+    location1= """./scratch.json"""
+    location2 = """./scratch.json"""
     diffs = compareText(location1, location2)
     if len(diffs) > 0:
         print('\r\nFound differences comparing ' + location1 + ' and ' + location2)

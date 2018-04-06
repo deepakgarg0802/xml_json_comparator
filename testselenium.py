@@ -18,24 +18,25 @@ class UntitledTestCase(unittest.TestCase):
 
     def test_untitled_test_case(self):
         driver = self.driver
-        driver.get("http://www.utilities-online.info/xmltojson/#.Wrjqii5ua70")
-        driver.find_element_by_id("xml").click()
-        driver.find_element_by_id("xml").clear()
 
-        xml_content= open("./scratch_xml.xml").read();
-        driver.find_element_by_id("xml").send_keys(xml_content)
-        driver.find_element_by_id("tojson").click()
-        json_output_from_net= driver.find_element_by_id("json").get_attribute("value")
+        driver.get("https://www.browserling.com/tools/xml-to-json")
+        driver.find_element_by_id("xml-to-json-text").click()
+        driver.find_element_by_id("xml-to-json-text").clear()
+        xml_content = open("./scratch_xml.xml").read();
+        driver.find_element_by_id("xml-to-json-text").send_keys(xml_content)
+
+        driver.find_element_by_id("xml-to-json-submit").click()
+        driver.find_element_by_id("xml-to-json-text").click()
+
+        json_output_from_net= driver.find_element_by_id("xml-to-json-text").get_attribute("value")
 
 
-        #driver.get("http://json-diff.com/")
-        # driver.find_element_by_xpath("//div[@id='left-input']/div/div[6]/div/div/div/div/div[5]/div/pre").click()
-        # driver.find_element_by_xpath("//div[@id='left-input']/div/div/textarea").clear()
-        # driver.find_element_by_xpath("//div[@id='left-input']/div/div/textarea").send_keys(json_output)
-        #
-        # driver.find_element_by_xpath("//div[@id='right-input']/div/div[6]/div/div/div/div/div[5]/div/pre").click()
-        # driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").clear()
-        # driver.find_element_by_xpath("//div[@id='right-input']/div/div/textarea").send_keys("{}")
+        #--------- Replace the attribute changes-----------
+        json_output_from_net=json_output_from_net.replace("_","")
+        json_output_from_net = json_output_from_net.replace("xaxis", "x-axis")
+        json_output_from_net = json_output_from_net.replace("yaxis", "y-axis")
+
+        print(json_output_from_net)
 
         jsoncompare.myf(json_output_from_net,"./scratch.json")
 
